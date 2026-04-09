@@ -1,0 +1,60 @@
+# Python虚拟环境（所有环境目录均忽略）
+venv*/
+.venv/
+venv_main/
+env/
+ENV/
+.pypackages/
+
+# PyCharm IDE配置文件
+.idea/
+*.iml
+
+# Kaggle比赛核心目录（数据/模型/提交文件不提交，体积大且易变）
+competitions/*/data/
+competitions/*/models/
+competitions/*/submissions/
+competitions/*/experiments/
+
+# Python缓存/编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+*.swp
+
+# 数据文件（通用，避免提交大文件）
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.xlsx
+*.xls
+*.json
+*.txt
+
+# 操作系统隐藏文件
+.DS_Store       # Mac
+Thumbs.db       # Windows
+Desktop.ini     # Windows
+
+# Jupyter Notebook缓存（保留ipynb，忽略检查点）
+.ipynb_checkpoints/
+# 若需忽略所有Notebook，取消下一行注释
+# *.ipynb
+
+# 虚拟环境包缓存/日志
+pip-log.txt
+pip-delete-this-directory.txt
